@@ -20,7 +20,7 @@
       <td><%= room.floor %></td>
       <td><%= room.location_notes %></td>
       <td><%= room.max_people %></td>
-      <td style="text-align:center"><% if room.windows %> <img src="http://www.free-icons-download.net/images/sun-icon-41809.png" class="img_fluid" style="max-width:30px; height:auto"> <% end %> </td>
+      <td style="text-align:center"><% if room.windows %> <img src="http://www.free-icons-download.net/images/sun-icon-41809.png" class="img_fluid" style="max-width:30px; height:auto"><% else %>No <% end %> </td>
       <td><%= room.room_notes %></td>
     </tr>
     <% end %>
