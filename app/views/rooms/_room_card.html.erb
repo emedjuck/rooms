@@ -1,0 +1,13 @@
+      <% for room in @rooms do %>
+      <div class="card">
+        <div class="card-block">
+          <h4 class="card-title"><%= room.name %></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">City: <%= room.city %></li>
+          <li class="list-group-item">Building: <%= room.building %></li>
+          <li class="list-group-item">Floor: <%= room.floor %></li>
+          <li class="list-group-item"># of People: <%= room.max_people %></li>
+        </ul>
+      </div>
+      <% end %>

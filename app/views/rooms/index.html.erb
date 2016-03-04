@@ -1,4 +1,23 @@
-<h2>Hello World</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
+<div class="container">
+<table id="rooms" class="table table-striped table-bordered" cellspacing="0" width="100%">
+  <thead>
+    <tr>
+      <th> Name </th>
+      <th> Building </th>
+      <th> Floor </th>
+      <th> Max People </th>
+      <th> Notes </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for room in @rooms do %>
+    <tr>
+      <td><%= room.name %></td>
+      <td><%= room.building %></td>
+      <td><%= room.floor %></td>
+      <td><%= room.max_people %></td>
+      <td><%= room.notes %></td>
+    </tr>
+    <% end %>
+</table>
+</div>
