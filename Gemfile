@@ -42,7 +42,7 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 
 gem 'rails_12factor', group: :production
 
-ruby "2.1.1"
+ruby "2.1.7"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
